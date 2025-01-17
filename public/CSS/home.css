@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #D4B996
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #D4B996;
+}
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-block-end: 2rem;
+    color: #333;
+}
+.hero-text p {
+    font-size: 1.5rem;
+    margin-block-end: 1rem;
+    color: #333;
+}
+.hero-btn {
+    background-color: #996b15;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.hero-image img {
+    width: 85vh;
+    margin-top: 70px;
+}
+
+/* Popular Coffee */
+.popular-coffee {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 70px;
+    margin: 70px;
+}
+
+.popular-coffee::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    z-index: 0; /* Places the pseudo-element behind the content */
+    pointer-events: none; /* Ensures the pseudo-element doesn't interfere with content interaction */
+}
+
+.popular-coffee h2{
+    font-family: "Sansita Swashed", serif;
+    font-size: 50px;
+    padding-bottom: 40px;
+    color: #342C24;
+}
+.popular-coffee .product-grid {
+    position: relative; /* Ensures the content is above the pseudo-element */
+    z-index: 1; /* Brings the content above the pseudo-element */
+}
+
+
+/* Grid for product cards */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Styling for each product card */
+.product-card {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items */
+    gap: 20px; /* Add space between the image and the text */
+    padding: 20px; /* Optional: padding around the content */
+}
+
+.product-card img {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures images are cropped proportionally */
+    object-position: center; /* Centers the image within the crop */
+    display: block; /* Removes extra spacing caused by inline images */
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column; /* Stack the text and button vertically */
+    justify-content: center; /* Center the content vertically */
+}
+
+.product-details p {
+    margin: 0 0 10px; /* Add spacing below the paragraph */
+    font-size: 22px; /* Adjust font size */
+    color: black; /* Text color */
+}
+
+.product-details button {
+    background: none; /* Removes the background color */
+    border: none; /* Removes the border */
+    color: white; /* Optional: Text color, like a link */
+    font-size: 25px; /* Optional: Font size */
+    text-decoration: none; /* Optional: Adds an underline for emphasis */
+    cursor: pointer; /* Shows a pointer cursor on hover */
+    padding: 0; /* Removes default padding */
+}
+
+.product-details button:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/* why us section */
+.why-us {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 70px;
+    margin: 70px;
+}
+.why-us::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    z-index: 0; /* Places the pseudo-element behind the content */
+    pointer-events: none;
+}

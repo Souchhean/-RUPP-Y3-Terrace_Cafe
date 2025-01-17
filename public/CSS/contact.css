@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #D4B996
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 60px auto 60px; /* Add top margin to push it down */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 30px;
+}
+
+  /* Contact Info Section */
+.contact-info {
+    flex: 1; /* Ensure equal width with the form */
+    padding: 20px;
+    background-color: #846046;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info i {
+    margin-right: 10px; /* Space between the icon and text */
+    color: #ffffff; /* Icon color */
+    font-size: 18px; /* Icon size */
+}
+.contact-info p {
+    font-size: 16px; /* Font size for text */
+    line-height: 1.6;
+    margin: 10px;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px; /* Space between the icons */
+    justify-content: center;
+}
+
+.social-icon {
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icon:hover {
+    opacity: 0.7; /* Subtle hover effect */
+}
+
+/* Instagram Color */
+.social-icon.fa-instagram {
+    color: #E1306C; /* Instagram's official pink */
+}
+
+/* Facebook Color */
+.social-icon.fa-facebook {
+    color: #1877F2; /* Facebook's official blue */
+}
+
+/* TikTok Color */
+.social-icon.fa-tiktok {
+    color: #000000; /* TikTok's official black color */
+}
+
+/* Telegram Color */
+.social-icon.fa-telegram-plane {
+    color: #0088cc; /* Telegram's official blue */
+}
+
+/* Contact Form Section */
+.contact-form {
+    flex: 1;
+    padding: 30px;
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Form Layout */
+.contact-form form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+}
+
+.form-row {
+    display: contents; /* To ensure the form fields span the two columns */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Adjust widths for specific fields to fill the columns */
+.input-half-width {
+    width: 100%;
+}
+
+textarea {
+    resize: none; /* Prevent resizing for a cleaner look */
+    height: 100px;
+}
+
+/* Full-width fields */
+.form-group.full-width {
+    grid-column: span 2; /* Span both columns for full-width fields */
+}
+
+/* Form Button */
+button {
+    background-color: #846046;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #ae9380;
+}
+
+  /* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+}
